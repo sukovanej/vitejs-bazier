@@ -10,7 +10,7 @@ const fact = (n: number): number => {
 
 const comb = (n: number, k: number) => fact(n) / (fact(k) * fact(n - k));
 
-export const bazier = (ps: readonly Point[], t: number) => {
+export const bezier = (ps: readonly Point[], t: number) => {
   const n = ps.length - 1;
   return ps.reduce(
     (acc, cur, i) => {

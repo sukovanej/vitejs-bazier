@@ -1,4 +1,4 @@
-import { bazier, Point } from "./bazier";
+import { bezier, Point } from "./bezier";
 
 export const POINT_RADIUS = 15;
 
@@ -11,11 +11,11 @@ export class Drawing {
     readonly canvas: HTMLCanvasElement
   ) {}
 
-  private drawBazier(points: readonly Point[]) {
+  private drawBezier(points: readonly Point[]) {
     const dt = 0.001;
 
     for (let t = 0; t <= 1; t += dt) {
-      this.drawPoint(bazier(points, t), 1, "#eee");
+      this.drawPoint(bezier(points, t), 1, "#eee");
     }
   }
 
@@ -31,7 +31,7 @@ export class Drawing {
 
   private redraw() {
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    if (this.points.length > 1) this.drawBazier(this.points);
+    if (this.points.length > 1) this.drawBezier(this.points);
     this.drawPoints();
   }
 

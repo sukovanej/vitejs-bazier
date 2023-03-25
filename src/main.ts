@@ -1,4 +1,4 @@
-import { Point } from "./bazier";
+import { Point } from "./bezier";
 import { Drawing } from "./Drawing";
 import "./style.css";
 

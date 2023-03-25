@@ -1,4 +1,4 @@
-# `vite` / `typescript` interactive bazier curve playground
+# `vite` / `typescript` interactive bezier curve playground
 
 ![plot](./example.png)
 
