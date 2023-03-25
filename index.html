@@ -2,13 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
-    <title>Vite + TS</title>
+    <title>Bezier</title>
   </head>
   <body>
     <canvas id="canvas"></canvas>
+    <div id="help">
+      <code>MOUSE LEFT KEY</code> in the page to add a new control point.
+      <code>TAB</code> to cycle control points. <code>DEL</code> or <code>BACKSPACE</code> to delete a control point.
+      <code>ESC</code> to unselect a control point.
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

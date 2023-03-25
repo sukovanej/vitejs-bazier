@@ -29,7 +29,7 @@ export class Drawing {
     }
   }
 
-  private redraw() {
+  redraw() {
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     if (this.points.length > 1) this.drawBezier(this.points);
     this.drawPoints();
